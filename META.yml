@@ -3,11 +3,13 @@ abstract: 'trimming text by the number of the column s of terminals and mobile p
 author:
   - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
+  Test::More: 0.98
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 0.99'
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,12 +17,24 @@ meta-spec:
 name: Text-VisualWidth-PP
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+provides:
+  Text::VisualWidth::PP:
+    file: lib/Text/VisualWidth/PP.pm
+    version: 0.02
 requires:
   Unicode::EastAsianWidth: 1.3
-  perl: 5.8.1
+  perl: 5.008001
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.01
+  bugtracker: https://github.com/tokuhirom/Text-VisualWidth-PP/issues
+  homepage: https://github.com/tokuhirom/Text-VisualWidth-PP
+  repository: git://github.com/tokuhirom/Text-VisualWidth-PP.git
+version: 0.02
+x_contributors:
+  - 'Tokuhiro Matsuno <tokuhirom@gmail.com>'
