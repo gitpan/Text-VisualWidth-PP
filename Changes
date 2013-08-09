@@ -1,5 +1,9 @@
 Revision history for Perl extension Text::VisualWidth::PP
 
+0.03 2013-08-09T05:19:48Z
+
+    - Added vwidth, vtrim for better user experience.
+
 0.02 2013-08-06T05:24:48Z
 
     - Added $Text::VisualWidth::PP::EastAsian
